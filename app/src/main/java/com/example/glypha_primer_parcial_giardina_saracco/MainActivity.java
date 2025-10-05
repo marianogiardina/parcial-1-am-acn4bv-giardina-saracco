@@ -74,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout favContainer = findViewById(R.id.fav_container);
 
+        favContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Seccion en desarrollo", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         TextView favoritos = new TextView(this);
         favoritos.setTextColor(getColor(R.color.bg_yellow));
         favoritos.setText(getString(R.string.favoritos));
