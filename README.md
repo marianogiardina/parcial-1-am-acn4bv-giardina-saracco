@@ -12,5 +12,4 @@ La pantalla de perfil muestra imagen, nombre, usuario y una breve descripción, 
 
 ## Links útiles
 - Tablero de tareas: https://trello.com/b/waqmBsKT/glypha-giardina-saracco  
-- Repositorio: https://github.com/marianogiardina/parcial-1-am-acn4bv-giardina-saracco
 
