@@ -12,6 +12,22 @@ public class Fuente {
         this.nombre = nombre;
     }
 
+    public Fuente(int id, String nombre, String peso, String tamanio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.peso = peso;
+        this.tamanio = tamanio;
+    }
+
+    public Fuente(int id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public String getNombre() {
         return nombre;
     }
