@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_yellow"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,6 +51,7 @@
                 android:backgroundTint="@color/bg_btn_navbar"
                 android:drawableTop="@drawable/icon_home"
                 android:gravity="center"
+                android:onClick="goHome"
                 android:text="@string/inicio"
                 android:textColor="@color/black" />
 
@@ -62,6 +63,7 @@
                 android:backgroundTint="@color/bg_btn_navbar"
                 android:drawableTop="@drawable/icon_search"
                 android:gravity="center"
+                android:onClick="goSearch"
                 android:text="@string/buscar"
                 android:textColor="@color/black" />
 
@@ -74,7 +76,7 @@
                 android:drawableTop="@drawable/icon_profile"
                 android:gravity="center"
                 android:text="@string/perfil"
-                android:textColor="@color/blue" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
@@ -241,6 +243,16 @@
                 android:textSize="16sp" />
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goAdmin"
+            android:text="Ir a Admin"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fav_container" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
