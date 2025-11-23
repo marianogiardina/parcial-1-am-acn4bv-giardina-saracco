@@ -201,7 +201,40 @@
 
                 </LinearLayout>
 
+                <!-- Seccion  Inspo semanal-->
 
+                <LinearLayout
+                    android:id="@+id/seccion_inspo_semanal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tituloInspo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/title_inspiracion_semanal"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry" />
+
+                    <include
+                        android:id="@+id/mas_usadas_underline"
+                        layout="@layout/seccion_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <include
+                        android:id="@+id/tendencias_underline"
+                        layout="@layout/seccion_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
 
             </LinearLayout>
 

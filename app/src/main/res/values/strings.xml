@@ -78,5 +78,8 @@
     <string name="txt_font_montserrat">MONTSERRAT</string>
     <string name="tendencias_subtitulo">Haz click en alguna de las tipografias para luego probarla</string>
     <string name="probar_fuente_txt">AåBbCc\n#9½\nƒ%£©∑Ø!</string>
+    <string name="title_inspiracion_semanal">Inspiracion Semanal</string>
+    <string name="title_inspiracion_semanal_tendencias">Tendencias</string>
+    <string name="title_inspiracion_semanal_mas_usadas">Mas usadas</string>
 
 </resources>

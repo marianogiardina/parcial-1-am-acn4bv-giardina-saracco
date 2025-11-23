@@ -36,6 +36,18 @@ public class HomeActivity extends AppCompatActivity {
         fontClickListeners();
 
         handleFontTest();
+
+        textSeccionUnderline();
+    }
+
+    private void textSeccionUnderline(){
+
+        View seccionTendencias = findViewById(R.id.tendencias_underline);
+
+        View seccionMasUsadas = findViewById(R.id.mas_usadas_underline);
+
+        ((TextView) seccionTendencias.findViewById(R.id.tilte_underline)).setText(getString(R.string.title_inspiracion_semanal_tendencias));
+        ((TextView) seccionMasUsadas.findViewById(R.id.tilte_underline)).setText(getString(R.string.title_inspiracion_semanal_mas_usadas));
     }
 
     private void textCatCards(){
