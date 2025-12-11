@@ -20,9 +20,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.glypha_primer_parcial_giardina_saracco.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
     Button homeBtn, searchBtn, profileBtn;
 
     @SuppressLint("SetTextI18n")
@@ -40,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if(currentUser == null){
+            //TODO:redireccionar a login
+            Toast.makeText(getApplicationContext(), "currentuser", Toast.LENGTH_SHORT).show();
+        }else{
+            //TODO: getDatos
+        }
 
         profileBtn = findViewById(R.id.btn_perfil);
         searchBtn = findViewById(R.id.btn_buscar);
