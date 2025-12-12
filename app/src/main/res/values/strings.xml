@@ -25,53 +25,6 @@
     <string name="clasica">Clasica</string>
     <string name="moderna">Moderna</string>
     <string name="elegante">Elegante</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <string name="glypha">GLYPHA</string>
     <string name="subtitulo_home">¡Vamos a encontrar tu Tipografía Ideal!</string>
     <string name="txt_cat_moderna">MODERNA</string>
@@ -90,5 +43,10 @@
     <string name="title_inspiracion_semanal">Inspiracion Semanal</string>
     <string name="title_inspiracion_semanal_tendencias">Tendencias</string>
     <string name="title_inspiracion_semanal_mas_usadas">Mas usadas</string>
+    <string name="txt_login_mail">Mail</string>
+    <string name="txt_login_password">Contraseña</string>
+    <string name="txt_btn_login">Entrar</string>
+    <string name="txt_login_forgot_pass">¿No tienes cuenta? Registrarse</string>
+    <string name="txt_login_forgot_pass_2">¿Olvidaste tu contraseña?</string>
 
 </resources>
