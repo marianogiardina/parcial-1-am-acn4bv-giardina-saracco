@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
         if(currentUser == null){
-            //TODO:redireccionar a login
-            Toast.makeText(getApplicationContext(), "currentuser", Toast.LENGTH_SHORT).show();
+            Intent login = new Intent(this, LoginActivity.class);
+            startActivity(login);
         }else{
             //TODO: getDatos
         }
