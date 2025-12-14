@@ -20,26 +20,25 @@
             android:id="@+id/tv_favoritos_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
             android:text="Fuente Favoritas"
             android:textColor="@color/bg_yellow"
             android:textSize="16sp"
-            android:layout_marginStart="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/about_container"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintBottom_toTopOf="@+id/rv_favoritos"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_favoritos"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_favoritos_titulo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            android:layout_width="379dp"
+            android:layout_height="140dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:background="@color/bg_yellow"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
             android:id="@+id/navbar"
@@ -226,23 +225,21 @@
             android:id="@+id/about_container"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:gravity="start"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/navbar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/seguidores_container"
-            app:layout_constraintVertical_bias="0.19999999"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-           >
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/tv_favoritos_titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seguidores_container">
 
             <TextView
                 android:id="@+id/acerca_de_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/acerca_de"
                 android:layout_marginBottom="10dp"
+                android:text="@string/acerca_de"
                 android:textColor="@color/bg_yellow"
                 android:textSize="16sp" />
 
@@ -250,15 +247,15 @@
                 android:id="@+id/acerca_de_texto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="@string/mi_nombre_es_pablo_martinez_me_llamo_la_atencion_esta_aplicaci_n_por_la_variedad_de_tipografias_que_ofrec_a_soy_progamador_front_end_y_pretendo_utilizar_las_fuentes_para_futuros_trabajos"
                 android:textColor="@color/blue"
-                android:layout_marginBottom="10dp"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="4dp"
                 android:text="@string/buenos_aires_argentina"
                 android:textColor="@color/blue"
                 android:textSize="16sp" />

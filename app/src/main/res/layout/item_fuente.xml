@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/tv_nombre_fuente"
@@ -12,16 +12,16 @@
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/btn_favorito"
         android:text="Nombre de la Fuente"
-        android:textColor="@android:color/black"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <ImageButton
         android:id="@+id/btn_favorito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
+        android:layout_marginEnd="0dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@android:drawable/btn_star_big_off" />
+        android:src="@android:drawable/btn_star" />
 
 </RelativeLayout>
